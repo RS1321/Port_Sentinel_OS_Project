@@ -1,0 +1,20 @@
+[Unit]
+Description=Port Sentinel process level port management agent
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/.local/share/port-sentinel
+ExecStart=%h/.local/share/port-sentinel/.venv/bin/python3 %h/.local/share/port-sentinel/port_sentinel_service.py
+Environment=PORT_SENTINEL_MODEL=qwen3:4b
+RuntimeDirectory=port-sentinel
+RuntimeDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=yes
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

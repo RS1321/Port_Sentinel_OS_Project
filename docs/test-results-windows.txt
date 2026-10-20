@@ -1,0 +1,34 @@
+test_both_stop_refused (test_sentinel.IntentTests.test_both_stop_refused) ... ok
+test_extra_fields (test_sentinel.IntentTests.test_extra_fields) ... ok
+test_force_explicit (test_sentinel.IntentTests.test_force_explicit) ... ok
+test_force_not_inferred (test_sentinel.IntentTests.test_force_not_inferred) ... ok
+test_hidden_owner_never_signalled (test_sentinel.IntentTests.test_hidden_owner_never_signalled) ... ok
+test_inspect (test_sentinel.IntentTests.test_inspect) ... ok
+test_invalid_types (test_sentinel.IntentTests.test_invalid_types) ... ok
+test_list (test_sentinel.IntentTests.test_list) ... ok
+test_multiple_owners_never_signalled (test_sentinel.IntentTests.test_multiple_owners_never_signalled) ... ok
+test_multiport (test_sentinel.IntentTests.test_multiport) ... ok
+test_negative_and_conditional (test_sentinel.IntentTests.test_negative_and_conditional) ... ok
+test_protocol_mismatch (test_sentinel.IntentTests.test_protocol_mismatch) ... ok
+test_read_only_cannot_stop (test_sentinel.IntentTests.test_read_only_cannot_stop) ... ok
+test_requested_stop (test_sentinel.IntentTests.test_requested_stop) ... ok
+test_unknown_owner_never_signalled (test_sentinel.IntentTests.test_unknown_owner_never_signalled) ... ok
+test_unrequested_udp (test_sentinel.IntentTests.test_unrequested_udp) ... ok
+test_wrong_port (test_sentinel.IntentTests.test_wrong_port) ... ok
+test_native_protected_pid (test_sentinel.LinuxIntegrationTests.test_native_protected_pid) ... skipped 'requires Ubuntu /proc and compiled native library'
+test_service_transport_without_model (test_sentinel.LinuxIntegrationTests.test_service_transport_without_model) ... skipped 'requires Ubuntu /proc and compiled native library'
+test_tcp_discover_stop_and_release (test_sentinel.LinuxIntegrationTests.test_tcp_discover_stop_and_release) ... skipped 'requires Ubuntu /proc and compiled native library'
+test_udp_proc_fallback (test_sentinel.LinuxIntegrationTests.test_udp_proc_fallback) ... skipped 'requires Ubuntu /proc and compiled native library'
+test_combined_netid (test_sentinel.SocketParsingTests.test_combined_netid) ... ok
+test_hidden_pids (test_sentinel.SocketParsingTests.test_hidden_pids) ... ok
+test_ipv4_proc (test_sentinel.SocketParsingTests.test_ipv4_proc) ... ok
+test_ipv6_proc (test_sentinel.SocketParsingTests.test_ipv6_proc) ... ok
+test_malformed (test_sentinel.SocketParsingTests.test_malformed) ... ok
+test_partial_owner_supplement (test_sentinel.SocketParsingTests.test_partial_owner_supplement) ... ok
+test_tcp (test_sentinel.SocketParsingTests.test_tcp) ... ok
+test_timeout (test_sentinel.SocketParsingTests.test_timeout) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.006s
+
+OK (skipped=4)
