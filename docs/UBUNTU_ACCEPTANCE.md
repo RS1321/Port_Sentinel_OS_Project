@@ -1,6 +1,8 @@
 # Ubuntu acceptance checklist
 
-Status on 20 October 2026: pending. Run on a disposable Ubuntu user account.
+Status on 20 October 2026: automated Ubuntu validation passed in [run 39458181805](https://github.com/RS1321/Port_Sentinel_OS_Project/actions/runs/39458181805): C build, dependency checks, all 29 tests and Python syntax. See [test-results-ubuntu.txt](test-results-ubuntu.txt).
+
+The checklist below is the separate manual acceptance procedure. Installed systemd behaviour, real-model requests and demonstrations remain pending. Run on a disposable Ubuntu user account.
 
 1. Record Ubuntu release, kernel, Python, compiler, systemd and Ollama/model versions.
 2. Run `make` and `make test`; save compiler output and unittest output. Confirm all Linux tests execute, not skip.

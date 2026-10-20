@@ -23,7 +23,7 @@ Supported natural language is intentionally bounded: one numeric port, an explic
 
 ## Evidence
 
-29 tests discovered on Windows: 25 passed, 4 Linux integration tests skipped. Python modules compile successfully. This local log does not establish Ubuntu, native compilation, real-model or installed systemd execution. Linux build and integration results are recorded separately by GitHub Actions. Test output is included in docs/test-results-windows.txt. The repository now contains the corrected source, reports and an Ubuntu validation workflow. See the latest GitHub Actions run for Linux test results.
+29 tests discovered on Windows: 25 passed, 4 Linux integration tests skipped. Python modules compile successfully. This local log does not establish Ubuntu, native compilation, real-model or installed systemd execution. Linux build and integration results are recorded separately by GitHub Actions. Test output is included in docs/test-results-windows.txt. The repository now contains the corrected source, reports and an Ubuntu validation workflow. [Ubuntu run 39458181805](https://github.com/RS1321/Port_Sentinel_OS_Project/actions/runs/39458181805) compiled the native library and passed all 29 tests without skips. Dependency and syntax checks passed. See test-results-ubuntu.txt; installed systemd and real-model validation remain pending.
 
 ## Remaining constraints
 

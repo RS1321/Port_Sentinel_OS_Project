@@ -8,7 +8,9 @@ A process-level Ubuntu service with a terminal-only natural-language client. It 
 
 ## Current verification
 
-The supplied archive was reviewed file by file. The revised project passes 25 platform-independent tests on Windows; 4 Linux integration tests are provided but were not run here. No Ubuntu distribution or Ollama model was available in this environment. Native compilation, live socket tests, service installation and real-model English requests still require Ubuntu validation. Ubuntu builds and integration tests run through the [Ubuntu validation workflow](https://github.com/RS1321/Port_Sentinel_OS_Project/actions/workflows/ubuntu.yml). See the latest run for current results. Installed systemd and real-model acceptance are tracked separately in [the Ubuntu checklist](docs/UBUNTU_ACCEPTANCE.md).
+The C library builds successfully on Ubuntu 24.04, and all **29 tests pass with no skips** in [the first Ubuntu validation run](https://github.com/RS1321/Port_Sentinel_OS_Project/actions/runs/39458181805). This includes native TCP discovery and termination, UDP proc fallback, protected-PID rejection and local service transport. Dependency installation and Python syntax checks also passed. The [recorded Ubuntu log](docs/test-results-ubuntu.txt) identifies the tested commit.
+
+On Windows, 25 platform-independent tests passed and 4 Linux tests were skipped. Installed systemd behaviour and real-model English requests remain manual acceptance checks; the Ubuntu automated tests do not run a real model or install the user service. See [the acceptance checklist](docs/UBUNTU_ACCEPTANCE.md) and [latest workflow runs](https://github.com/RS1321/Port_Sentinel_OS_Project/actions/workflows/ubuntu.yml).
 
 ## Requirements
 
