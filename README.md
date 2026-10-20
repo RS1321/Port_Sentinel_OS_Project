@@ -2,8 +2,6 @@
 
 [![Ubuntu validation](https://github.com/RS1321/Port_Sentinel_OS_Project/actions/workflows/ubuntu.yml/badge.svg)](https://github.com/RS1321/Port_Sentinel_OS_Project/actions/workflows/ubuntu.yml)
 
-**Rahul Sudarshan — 24BCE3006**
-
 A process-level Ubuntu service with a terminal-only natural-language client. It maps TCP listening sockets and UDP bound sockets to owning processes and can stop a unique process owned by the service user. The LLM returns a restricted JSON intent; it never supplies executable shell text. Python selects fixed `ss` arguments or reads `/proc`, and calls a compiled C library through `ctypes` to signal a pinned Linux process descriptor.
 
 ## Current verification
