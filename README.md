@@ -10,6 +10,12 @@ The C library builds successfully on Ubuntu 24.04, and all **29 tests pass with 
 
 On Windows, 25 platform-independent tests passed and 4 Linux tests were skipped. Installed systemd behaviour and real-model English requests remain manual acceptance checks; the Ubuntu automated tests do not run a real model or install the user service. See [the acceptance checklist](docs/UBUNTU_ACCEPTANCE.md) and [latest workflow runs](https://github.com/RS1321/Port_Sentinel_OS_Project/actions/workflows/ubuntu.yml).
 
+## Windows 11 execution video
+
+[Watch or download the Windows 11 demonstration](docs/demos/Port_Sentinel_Windows11_Demo.mp4) (about 75 seconds).
+
+The separate Windows edition passes 20 tests, starts a background user agent, discovers a disposable server on port 8080, stops it through a native C DLL, and verifies that the port is free using both Port Sentinel and `netstat`. The recording displays actual command output through a labelled live-log viewer. It uses explicit commands after the API check returned HTTP 429; successful natural-language inference is not shown. See [recording details](docs/demos/README.md).
+
 ## Requirements
 
 Target: Ubuntu 24.04 LTS, Python 3.12, systemd user services, Linux with pidfd support, a C compiler and `iproute2`. Ubuntu 22.04/Python 3.10 is a possible target but has not been verified. Native library operations fail closed if compilation or pidfd support is missing. Ollama and a locally installed model supporting structured output are required for English requests. The default is `qwen3:4b`; model speed and accuracy depend on hardware and model choice.
