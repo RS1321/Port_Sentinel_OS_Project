@@ -12,9 +12,9 @@ On Windows, 25 platform-independent tests passed and 4 Linux tests were skipped.
 
 ## Port Sentinel execution video
 
-[Watch or download the Port Sentinel execution](docs/demos/Port_Sentinel_Execution.mp4) (about 57 seconds).
+[Watch or download the Port Sentinel execution](docs/demos/Port_Sentinel_Gemini_Execution.mp4) (about 51 seconds).
 
-The recording shows command-based execution of the separate Windows edition: 20 passing tests, the background agent, discovery of a disposable server on port 8080, process termination through the C library, and port-release checks. It uses the title "Execution of Port Sentinel" and consistent 1280 x 720 framing. See [recording details](docs/demos/README.md).
+The recording shows the separate Windows edition using Google Gemini to interpret two English requests: "What process is using port 8080?" and "What process is hogging port 8080? Stop it." It includes 24 passing tests, the background agent, discovery of the demo server, termination through the C library, and independent port-release checks. The title is "Execution of Port Sentinel", with consistent 1280 x 720 framing. See [recording details](docs/demos/README.md).
 
 ## Requirements
 
