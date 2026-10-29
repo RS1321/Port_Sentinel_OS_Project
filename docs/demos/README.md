@@ -1,17 +1,16 @@
-# Windows 11 execution recording
+# Execution of Port Sentinel
 
-[Watch or download Port_Sentinel_Windows11_Demo.mp4](Port_Sentinel_Windows11_Demo.mp4)
+[Watch or download the execution video](Port_Sentinel_Execution.mp4)
 
-- Duration: approximately 75 seconds; 1280 x 720 H.264 MP4; no narration.
-- Environment: Windows 11, Python 3.12.14 and the Windows C DLL.
-- Mode: explicit command mode. The OpenAI API check returned HTTP 429, so this video does not demonstrate successful English interpretation.
-- Capture: a real-time local log viewer displays output from actual Windows subprocesses. It is not a native PowerShell window or an Ubuntu recording.
+Duration: approximately 57 seconds. Format: 1280 x 720 H.264 MP4 at 15 frames per second, with consistent framing throughout.
+
+This is a fresh command-based run of the Windows edition using Python 3.12.14 and the native C DLL. A local log viewer displays output from actual commands under the title "Execution of Port Sentinel".
 
 ## Execution shown
 
 1. Run all 20 Windows tests successfully.
 2. Start the authenticated named-pipe background user agent and check its status.
-3. Start the disposable loopback TCP server on port 8080 (PID 36236 in this run).
+3. Start the disposable loopback TCP server on port 8080 (PID 36676 in this run).
 4. Inspect the port and verify that the server remains running.
 5. Independently confirm the listener with `netstat`.
 6. Stop the server using the Windows C library's `TerminateProcess` operation.
